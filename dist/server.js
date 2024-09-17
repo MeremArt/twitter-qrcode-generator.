@@ -19,7 +19,7 @@ const port = 5500; // You can change the port
 // Define the Twitter URL as a constant
 const TWITTER_URL = "https://x.com/DeCharge__";
 // Endpoint to generate a QR code for the Twitter URL
-app.get("/api/twitter-qrcode", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+app.get("/", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         // Generate QR code as a Data URL
         const qrCodeDataURL = yield qrcode_1.default.toDataURL(TWITTER_URL);
